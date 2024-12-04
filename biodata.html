@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>biodata</title>
+
+<style>
+
+body 
+{
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+margin: 0;
+padding: 0;
+color: #61a0ff;
+padding-top: 60px; /* Add padding to ensure content doesn't hide behind navbar */}
+
+header 
+{
+background-color: #4B0082;
+color: #FFD700;
+padding: 20px 0;
+text-align: center;
+}
+
+header h1 
+{
+font-size: 1cm;
+margin: 0;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+header p 
+{
+font-size: 0.5cm;
+margin: 1px 0 0 0;
+}
+
+        nav 
+	{
+         background-color: #FFD700;
+         display: flex;
+         justify-content: center;
+         padding: 10px 0;
+         position: fixed; /* Fix the navbar at the top */
+         top: 0; /* Keep it at the top of the page */
+         left: 0; /* Align to the left */
+         width: 100%; /* Full width */
+         z-index: 1000; /* Keeps navbar above other content */
+        }
+
+        nav a 
+	{
+         text-decoration: none;
+         color: #4B0082;
+         padding: 10px 15px;
+         font-weight: bold;
+         text-transform: uppercase;
+        }
+
+        nav a:hover 
+	{
+        background-color: #4B0082;
+        color: #FFD700;
+        border-radius: 20px;
+        }
+
+        .content 
+	{
+            width: 100%;
+            margin-top: 120px; /* Ensures content starts below navbar */
+            text-align: center; /* Centers text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .biodata-container 
+	{
+            width: 90%;
+            max-width: 800px;
+            background: #fff; /* White */
+            color: #4b0082; /* Purple */
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+        }
+
+        .biodata-container img 
+	{
+            width: 200px; /* Adjusted size to look more prominent */
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .biodata-container h1 
+	{
+            color: #d4af37; /* Gold */
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .biodata-container p 
+	{
+            color: #4b0082;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        h2 
+	{
+            color: #800080; /* Darker Purple */
+            margin-top: 20px;
+            border-bottom: 2px solid #d4af37; /* Gold */
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        table 
+	{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td 
+	{
+            border: 1px solid #4b0082;
+            text-align: left;
+        }
+
+        th 
+	{
+            background-color: #4b0082;
+            color: #fff;
+            padding: 8px;
+        }
+
+        td 
+	{
+            padding: 8px;
+            color: #333;
+        }
+
+footer 
+{
+background-color: #4B0082;
+color: #FFD700;
+text-align: center;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+footer p 
+{
+margin: 0;
+font-size: 0.5cm;
+}
+
+</style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Inside Wirda’s World</h1>
+        <p>The story behind the name — everything that shape my journey</p>
+    </header>
+
+    <nav>
+ 	<a href="index.html">Home</a>
+        <a href="form.html">Be Friend</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="content">
+    <!-- Main Content -->
+    <div class="biodata-container">
+    <!-- Profile Picture -->
+    <img src="emoji.jpg" alt="Profile Picture">
+            
+    <!-- Biodata Title -->
+    <h1>Fatin Nazira Wirda</h1>
+    <p>Student | Faculty of College of Computing, Informatics and Mathematics</p>
+            
+    	    <!-- Biodata Table -->
+            <h2>Personal Details</h2>
+            <table>
+                <tr>
+                <th>Full Name</th>
+                <td>Fatin Nazira Wirda Binti Harizan</td>
+                </tr>
+
+                <tr>
+                <th>Address</th>
+                <td>Teluk Intan, Perak</td>
+                </tr>
+
+                <tr>
+                <th>Date of Birth</th>
+                <td>23 December 2004</td>
+                </tr>
+
+                <tr>
+                <th>Gender</th>
+                <td>Female</td>
+                </tr>
+
+                <tr>
+                <th>Contact</th>
+                <td>013-2981698</td>
+                </tr>
+
+                <tr>
+                <th>Email</th>
+                <td>fatinnazirawirda@gmail.com</td>
+                </tr>
+            </table>
+            
+            <!-- Experience Section -->
+            <h2>Experience</h2>
+            <table>
+            <tr>
+            <th>Internship</th>
+            <td>Jabatan Rekod Perubatan at Hospital Teluk Intan (2024)</td>
+            </tr>
+            </table>
+            
+            <!-- Languages Section -->    
+            <h2>Languages</h2>
+            <table>
+            <tr>
+            <th>Language</th>
+            <td>English (Intermediate proficiency)</td>
+            </tr>
+
+            <tr>
+            <th>Language</th>
+            <td>Arabic (Basic proficiency)</td>
+            </tr>
+
+            <tr>
+            <th>Language</th>
+            <td>Malay (Native)</td>
+            </tr>
+            </table>
+            
+            <!-- Projects Section -->
+            <h2>Projects</h2>
+            <table>
+            <tr>
+            <th>Project</th>
+            <td>Medical Records Office Plan Design (2024)</td>
+            </tr>
+
+            <tr>
+            <th>Project</th>
+            <td>Independence Day Video Production (2024)</td>
+            </tr>
+
+            <tr>
+            <th>Project</th>
+            <td>Emergency Exit Signage Design (2024)</td>
+            </tr>
+
+            <tr>
+            <th>Project</th>
+            <td>Bakery Shop Management System (C++) (2024)</td>
+            </tr>
+
+            <tr>
+            <th>Project</th>
+            <td>Designed a Magazine Layout (2024)</td>
+            </tr>
+            </table>
+
+    </div>
+    </div>
+
+<footer>
+<p>&copy; 2024 FATINNAZIRAWIRDA. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

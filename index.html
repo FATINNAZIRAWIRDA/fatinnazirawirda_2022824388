@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>fatinnazirawirda</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            color: #61a0ff;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #4B0082;
+            color: #FFD700;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 1.5em;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 0.8em;
+            margin: 1px 0 0 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #FFD700;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px 0;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4B0082;
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #4B0082;
+            color: #FFD700;
+            border-radius: 20px;
+        }
+
+        /* Main Content Styling */
+        .content {
+            padding: 1em;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 2em;
+            color: #4B0082;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1em;
+            color: #000;
+        }
+
+        /* Card Section */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 15px;
+            color: #4B0082;
+            transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            color: #4B0082;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #4B0082;
+            color: #FFD700;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.8em;
+        }
+
+        /* Responsive Design */
+        /* Mobile and Tablet Design */
+        @media (max-width: 1024px) {
+            header h1 {
+                font-size: 1.2em;
+            }
+
+            nav {
+                flex-direction: column; /* Stack navigation links vertically on smaller screens */
+                align-items: center;
+            }
+
+            nav a {
+                width: 100%;
+                padding: 15px 0;
+                text-align: center;
+                font-size: 1.1em;
+            }
+
+            .card-container {
+                grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+            }
+
+            .card {
+                width: 100%;
+                padding: 20px;
+                font-size: 1.1em;
+            }
+        }
+
+        /* Mobile Design */
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr; /* Single column layout for small screens */
+            }
+
+            .content h2 {
+                font-size: 1.5em;
+            }
+
+            .content p {
+                font-size: 1.2em;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                padding: 12px;
+                font-size: 1em;
+                text-align: center;
+            }
+
+            footer p {
+                font-size: 0.7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inside Wirda’s World</h1>
+        <p>Your gateway to my personal journey</p>
+    </header>
+
+    <nav>
+        <a href="form.html">Be Friend</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="content">
+        <h2>&#10024; Welcome to My Fabulous World &#10024;</h2>
+        <p>Hi! My name is Wirda. This website is a showcase of my journey, skills, and memories.</p>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Biodata</h3>
+            <p>The most difficult thing in life is to know yourself</p>
+            <a href="biodata.html">Explore More</a>
+        </div>
+
+        <div class="card">
+            <h3>Skills</h3>
+            <p>The beautiful thing about learning is that nobody can take it away from you</p>
+            <a href="skills.html">Explore More</a>
+        </div>
+
+        <div class="card">
+            <h3>Education</h3>
+            <p>I hear and I forget. I see and I remember. I do and I understand</p>
+            <a href="education.html">Explore More</a>
+        </div>
+
+        <div class="card">
+            <h3>Family</h3>
+            <p>A risky venture</p>
+            <a href="family.html">Explore More</a>
+        </div>
+
+        <div class="card">
+            <h3>Gallery</h3>
+            <p>All good things are wild and free</p>
+            <a href="gallery.html">Explore More</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 FATINNAZIRAWIRDA. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

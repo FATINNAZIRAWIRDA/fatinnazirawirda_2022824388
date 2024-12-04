@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>family</title>
+
+<style>
+
+* 
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body 
+{
+font-family: 'Arial', sans-serif;
+background-color: #f4f4f9;
+color: #333;
+line-height: 1.6;
+padding: 0;
+margin: 0;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/*Full Screen Layout*/
+.container 
+{
+width: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+nav 
+{
+background-color: #FFD700;
+display: flex;
+justify-content: center;
+padding: 10px 0;
+position: sticky;
+top: 0;
+z-index: 100;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav a 
+{
+text-decoration: none;
+color: #4B0082;
+padding: 12px 15px;
+font-weight: bold;
+text-transform: uppercase;
+margin: 0 15px;
+transition: background-color 0.3s ease;
+}
+
+nav a:hover 
+{
+background-color: #4B0082;
+color: #FFD700;
+border-radius: 5px;
+}
+
+/* Family Section */
+.family-header 
+{
+background-color: #4b0082; /* Warna latar belakang */
+color: white; /* Warna teks */
+text-align: center; /* Selaraskan teks di tengah */
+padding: 50px 20px; /* Ruang di dalam header */
+font-family: 'Arial', sans-serif;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+.family-header h1 
+{
+font-size: 48px; /* Saiz tajuk */
+margin-bottom: 10px; /* Ruang bawah tajuk */
+}
+
+.family-header p 
+{
+font-size: 20px; /* Saiz perenggan */
+margin-top: 0; /* Tiada ruang atas perenggan */
+}
+
+.family-section 
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+width: 100%;
+align-items: center;
+}
+
+.family-title 
+{
+margin-top: 50px;
+margin-bottom: 20px;
+text-align: center;
+color: #4b0082;
+font-size: 36px;
+}
+
+/* Family Member Card */
+.family-card 
+{
+background-color: white;
+border-radius: 15px;
+width: 280px;
+height: 350px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+overflow: hidden;
+cursor: pointer;
+transition: transform 0.3s ease;
+}
+
+.family-card:hover 
+{
+transform: translateY(-10px);
+}
+
+.family-card img 
+{
+width: 100%;
+height: 200px;
+object-fit: cover;
+transition: transform 0.3s ease;
+}
+
+.family-card:hover img 
+{
+transform: scale(1.1);
+}
+
+.card-content 
+{
+padding: 20px;
+text-align: center;
+}
+
+.card-content h3 
+{
+font-size: 22px;
+color: #4b0082;
+margin-bottom: 10px;
+}
+
+.card-content p 
+{
+font-size: 16px;
+color: #666;
+}
+
+/* Info Box Styling (Hidden by default) */
+.family-card .info-box 
+{
+display: none;
+background-color: rgba(0, 0, 0, 0.7);
+color: white;
+padding: 20px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: opacity 0.3s ease;
+border-radius: 15px;
+}
+
+.family-card:hover .info-box 
+{
+display: flex;
+opacity: 1;
+}
+
+.info-box h3 
+{
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.info-box p 
+{
+font-size: 18px;
+}
+
+/* Footer Styling */
+footer 
+{
+text-align: center;
+padding: 5px 0;
+background: #4b0082;
+color: white;
+width: 100%;
+font-size: 16px;
+position: fixed;
+bottom: 0;
+left: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+    <nav>
+	<a href="index.html">Home</a>
+        <a href="form.html">Be Friend</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+<!-- Full Screen Family Section -->
+
+<header class="family-header">
+<h1>Meet My Family</h1>
+<p>A family is a place where life begins and love never ends!</p>
+</header>
+
+<div class="family-section">
+<!-- Family Member Cards -->
+
+<div class="family-card">
+<img src="ayahh.jpg" alt="Ayah">
+<div class="card-content">
+<h3>AYAH</h3>
+<p>Even in your silence, I feel your love guiding me, forever my pillar</p>
+</div>
+
+<div class="info-box">
+<p>A father's love is not always seen, but it is always felt. You taught me that strength lies in following my heart, no matter what</p>
+</div>
+</div>
+
+<div class="family-card">
+<img src="mii.jpg" alt="Umi">
+<div class="card-content">
+<h3>UMI</h3>
+<p>Your love is the warmth that holds me together when everything else falls apart</p>
+</div>
+
+<div class="info-box">
+<p>You taught me to stay calm in the face of fear, because sometimes, what we think is a ghost is just a shadow of what we must overcome</p>
+</div>
+</div>
+
+<div class="family-card">
+<img src="yaya.jpg" alt="Ya">
+<div class="card-content">
+<h3>YOYA</h3>
+<p>In every unspoken moment, I feel your support, stronger than words can say</p>
+</div>
+
+<div class="info-box">
+<p>I taught you to speak in English, yet I’ve learned that sometimes silence speaks louder than words, especially when misunderstood</p>
+</div>
+</div>
+
+<div class="family-card">
+<img src="humaira.jpg" alt="Anit">
+<div class="card-content">
+<h3>ANITMELAH</h3>
+<p>You taught me patience and strength, even when I couldn't understand your quiet love</p>
+</div>
+
+<div class="info-box">
+<p>I used to be frustrated by your endless sleep, but now I see it’s a sign of rest for the journey ahead—because sleep is necessary when success is certain</p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<footer>
+     <p>&copy; 2024 FATINNAZIRAWIRDA. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
+
+

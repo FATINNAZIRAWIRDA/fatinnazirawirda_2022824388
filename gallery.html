@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>gallery</title>
+
+</head>
+
+<style>
+
+body 
+{
+font-family: Arial, sans-serif;
+background-color: #f9f9f9;
+margin: 0;
+padding: 0;
+color: #61a0ff;
+}
+
+header 
+{
+background-color: #4B0082;
+color: #FFD700;
+padding: 20px 0;
+text-align: center;
+}
+
+header h1 
+{
+font-size: 1cm;
+margin: 0;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+header p 
+{
+font-size: 0.5cm;
+margin: 1px 0 0 0;
+}
+
+    nav 
+    {
+    background-color: #FFD700;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    }
+
+    nav a 
+    {
+    text-decoration: none;
+    color: #4B0082;
+    padding: 10px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+    nav a:hover 
+    {
+    background-color: #4B0082;
+    color: #FFD700;
+    border-radius: 20px;
+    }
+
+
+.gallery-container 
+{
+padding: 15px;
+text-align: center;
+}
+
+.gallery-container h2 
+{
+font-size: 1cm;
+color: #4B0082;
+margin-bottom: 20px;
+}
+
+.gallery 
+{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 15px;
+justify-items: center;
+margin: 20px auto;
+}
+
+.gallery img 
+{
+width: 200px;
+height: 200px;
+object-fit: cover;
+border: 3px solid #FFD700;
+border-radius: 10px;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover 
+{
+transform: scale(1.1);
+box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer 
+{
+background-color: #4B0082;
+color: #FFD700;
+text-align: center;
+padding: 5px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+footer p 
+{
+margin: 0;
+font-size: 0.5cm;
+}
+
+</style>
+</head>
+
+<body>
+<header>
+    <h1>Inside Wirda’s World</h1>
+    <p>"Welcome to the Random Realm: A little bit of this, a little bit of that, and a whole lot of me!"</p>
+</header>
+
+<nav>
+    <a href="index.html">HOME</a>
+    <a href="form.html">Be Friend</a>
+    <a href="biodata.html">Biodata</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="family.html">Family</a>
+</nav>
+
+<div class="gallery-container">
+    <h2>&#128247; No theme? No problem! &#128247;</h2>
+    <div class="gallery">
+        <img src="ye.jpg" alt="Gallery Image 1">
+        <img src="suka.jpg" alt="Gallery Image 2">
+        <img src="cantik.jpg" alt="Gallery Image 3">
+        <img src="yup.jpg" alt="Gallery Image 4">
+        <img src="yeah.jpg" alt="Gallery Image 5">
+        <img src="sakit.jpg" alt="Gallery Image 6">
+
+<video width="150" height="200" controls>
+    <source src="saje.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video width="150" height="200" controls>
+    <source src="merdu.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video width="150" height="200" controls>
+    <source src="joker.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video width="150" height="200" controls>
+    <source src="bunga.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video width="150" height="200" controls>
+    <source src="pergh.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<video width="150" height="200" controls>
+    <source src="lawo.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+    </div>
+</div>
+
+<footer>
+<p>&copy; 2024 FATINNAZIRAWIRDA. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            margin: 0;
+            color: #333;
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            background-color: #4b0082;
+            color: #fff;
+            padding: 30px 20px;  
+            text-align: center;
+            margin-top: 80px;  
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 20px;
+            font-style: italic;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #4b0082;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar a {
+            color: #d4af37; 
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #FFD700;
+            transform: translateY(-2px);
+        }
+
+        /* Skills Section */
+        .skills {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 140px; 
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 20px;
+        }
+
+        .skills h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .section-title {
+            font-size: 24px;
+            color: #4b0082;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ol.skill-list {
+            list-style-type: decimal; /* Adds numbered order */
+            margin-bottom: 30px;
+            padding-left: 20px; /* Adds indentation */
+        }
+
+        .skill-item {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .skill-item span {
+            flex: 1;
+        }
+
+        .skill-level {
+            font-weight: bold;
+            color: #4b0082;
+        }
+
+        .skill-level.beginner {
+            color: #f39c12;
+        }
+
+        .skill-level.intermediate {
+            color: #f1c40f;
+        }
+
+        .skill-level.advanced {
+            color: #27ae60;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #4b0082;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #FFD700;
+            color: #4b0082;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            cursor: pointer;
+            font-size: 20px;
+            z-index: 9999;
+            display: none;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-to-top:hover {
+            background-color: #fff;
+            color: #FFD700;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Show button when scrolling */
+        body {
+            scroll-behavior: smooth;
+        }
+
+        /* Show Back to Top Button when user scrolls */
+        body:has(.skills) {
+            overflow-y: scroll;
+        }
+
+        body:has(.skills:scroll) .back-to-top {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header with Name -->
+    <header>
+        <h1>Fatin Nazira Wirda</h1>
+        <p>Professional Skills Portfolio</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">HOME</a>
+        </div>
+
+        <div class="menu">
+	    <a href="form.html">Be Friend</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="education.html">Education</a>
+            <a href="family.html">Family</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="professional-skills" id="professional-skills">
+            <h2 class="section-title">Professional Skills</h2>
+            <ol class="skill-list">
+                <li class="skill-item">
+                    <span>HTML</span> 
+                    <span class="skill-level intermediate">Intermediate</span>
+                </li>
+                <li class="skill-item">
+                    <span>CSS</span> 
+                    <span class="skill-level intermediate">Intermediate</span>
+                </li>
+	        <li class="skill-item">
+                    <span>Lucidchart</span> 
+                    <span class="skill-level intermediate">Intermediate</span>
+                </li>
+                <li class="skill-item">
+                    <span>Project Management</span> 
+                    <span class="skill-level intermediate">Intermediate</span>
+                </li>
+                <li class="skill-item">
+                    <span>Canva</span> 
+                    <span class="skill-level advanced">Advanced</span>
+                </li>
+                <li class="skill-item">
+                    <span>Capcut</span> 
+                    <span class="skill-level advanced">Advanced</span>
+                </li>
+                <li class="skill-item">
+                    <span>Adobe Pro Premier</span> 
+                    <span class="skill-level beginner">Beginner</span>
+                </li>
+            </ol>
+        </div>
+
+        <div class="practical-skills" id="practical-skills">
+            <h2 class="section-title">Practical Skills</h2>
+            <ol class="skill-list">
+                <li class="skill-item">
+                    <span>Troubleshooting Basic Electrical Issues</span> 
+                    <span class="skill-level beginner">Beginner</span>
+                </li>
+                <li class="skill-item">
+                    <span>Basic Carpentry (Furniture Assembly)</span> 
+                    <span class="skill-level advanced">Advanced</span>
+                </li>
+                <li class="skill-item">
+                    <span>CCTV Installation & Configuration</span>
+                    <span class="skill-level beginner">Beginner</span>
+                </li>
+                <li class="skill-item">
+                    <span>Device Maintenance & Troubleshooting</span> 
+                    <span class="skill-level beginner">Beginner</span>
+                </li>
+                <li class="skill-item">
+                    <span>Basic Network Setup (WiFi, Router)</span> 
+                    <span class="skill-level beginner">Beginner</span>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">↑</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fatin Nazira Wirda. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
